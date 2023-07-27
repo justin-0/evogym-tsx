@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { SelectedPage } from "./types/SelectedPage.ts";
 import Navbar from "./components/Navbar.tsx";
+import Hero from "./components/Hero.tsx";
+import Benefits from "./components/Benefits.tsx";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -30,6 +32,8 @@ function App() {
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
+      <Hero setSelectedPage={setSelectedPage} />
+      <Benefits />
     </div>
   );
 }
