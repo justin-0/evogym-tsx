@@ -5,7 +5,7 @@ type Props = {
   page: string;
   selectedPage: SelectedPage;
   setSelectedPage: (value: SelectedPage) => void;
-  setMobileMenu: (value: boolean) => void;
+  setMobileMenu?: (value: boolean) => void;
 };
 
 const NavLink = ({
