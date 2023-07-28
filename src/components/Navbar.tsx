@@ -73,7 +73,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
       </div>
       {/* Mobile Menu */}
       {!isAboveMdScreens && mobileMenu && (
-        <div className="fixed bottom-0 right-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed bottom-0 right-0 z-40 h-full w-[300px]  bg-primary-100 drop-shadow-xl">
           <div className="flex justify-end p-12">
             <button onClick={() => setMobileMenu(false)}>
               <XMarkIcon className="h-6 w-6 text-gray-400" />
@@ -84,21 +84,25 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
               page="Home"
               setSelectedPage={setSelectedPage}
               selectedPage={selectedPage}
+              setMobileMenu={setMobileMenu}
             />
             <NavLink
               page="Benefits"
               setSelectedPage={setSelectedPage}
               selectedPage={selectedPage}
+              setMobileMenu={setMobileMenu}
             />
             <NavLink
               page="Our Classes"
               setSelectedPage={setSelectedPage}
               selectedPage={selectedPage}
+              setMobileMenu={setMobileMenu}
             />
             <NavLink
               page="Contact Us"
               setSelectedPage={setSelectedPage}
               selectedPage={selectedPage}
+              setMobileMenu={setMobileMenu}
             />
           </div>
         </div>

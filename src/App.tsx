@@ -26,14 +26,14 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className={`app bg-gray-20`}>
       <Navbar
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
       <Hero setSelectedPage={setSelectedPage} />
-      <Benefits />
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 }
