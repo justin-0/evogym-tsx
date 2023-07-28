@@ -17,3 +17,9 @@ body,
 .flexBetween {
   @apply flex items-center justify-between;
 }
+
+.overlay {
+  @apply absolute z-30 flex h-[300px] w-[400px] flex-col items-center justify-center gap-4
+  whitespace-normal bg-primary-500 p-5 text-center text-white opacity-0 
+  transition duration-500 hover:opacity-90;
+}

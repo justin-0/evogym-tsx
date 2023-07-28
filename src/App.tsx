@@ -3,6 +3,8 @@ import { SelectedPage } from "./types/SelectedPage.ts";
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
 import Benefits from "./components/Benefits.tsx";
+import Classes from "./components/Classes.tsx";
+import Contact from "./components/Contact.tsx";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -34,6 +36,8 @@ function App() {
       />
       <Hero setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <Classes setSelectedPage={setSelectedPage} />
+      <Contact setSelectedPage={setSelectedPage} />
     </div>
   );
 }
